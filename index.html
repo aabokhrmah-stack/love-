@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>حب ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #120008, #3b0018, #120008);
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      padding: 35px 25px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 40px rgba(255,0,80,0.25);
+    }
+
+    h1 {
+      font-size: 55px;
+      margin: 0 0 15px;
+      color: #ff4f81;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 10px 0 20px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #eee;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 30px;
+      background: #ff2f68;
+      color: white;
+      font-size: 19px;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(255,47,104,0.4);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    #message {
+      display: none;
+      margin-top: 25px;
+      font-size: 22px;
+      color: #ffb6c9;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -30px;
+      animation: fly 5s linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes fly {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-110vh) scale(1.8);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>❤️</h1>
+
+    <h2>إلى أجمل شخص في حياتي</h2>
+
+    <p>
+      بعض الأشخاص يدخلون حياتنا صدفة،
+      ثم يصبحون أجمل شيء فيها.
+      <br>
+      وأنت بالنسبة إليّ أكثر من مجرد شخص ❤️
+    </p>
+
+    <button onclick="showLove()">
+      اضغط هنا ❤️
+    </button>
+
+    <div id="message">
+      أحبك أكثر مما تستطيع الكلمات أن تصف ❤️
+      <br>
+      وستبقى دائمًا في قلبي.
+    </div>
+
+  </div>
+
+  <script>
+   
